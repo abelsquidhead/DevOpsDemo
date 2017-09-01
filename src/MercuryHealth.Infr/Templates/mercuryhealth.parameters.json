@@ -1,0 +1,82 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "virtualMachines_DevOpsDemoBuild_adminPassword": {
+      "value": "g83P@BxDXma7"
+    },
+    "virtualMachines_devopsDemoBuild_name": {
+      "value": "devopsDemoBuild"
+    },
+    "components_pauldevopsdemoweb_name": {
+      "value": "devopswebinsights"
+    },
+    "components_pauldevopsdemowebbg_name": {
+      "value": "devopswebbginsights"
+    },
+    "components_pauldevopsdemowebdev_name": {
+      "value": "devopswebdevinsights"
+    },
+    "components_pauldevopsdemowebqa_name": {
+      "value": "devopswebqainsights"
+    },
+    "networkInterfaces_devopsdemobuild273_name": {
+      "value": "devopsdemobuild273"
+    },
+    "networkInterfaces_devopsdemobuild445_name": {
+      "value": "devopsdemobuild445"
+    },
+    "networkSecurityGroups_devopsDemoBuild_nsg_name": {
+      "value": "devopsDemoBuild-nsg"
+    },
+    "publicIPAddresses_devopsDemoBuild_ip_name": {
+      "value": "devopsDemoBuild-ip"
+    },
+    "publicIPAddresses_devopsDemoBuildip_name": {
+      "value": "devopsDemoBuildip"
+    },
+    "virtualNetworks_PauldevopsDemo_RG_vnet_name": {
+      "value": "devops_RG-vnet"
+    },
+    "servers_abelmhdemosql_name": {
+      "value": "abelmhdemosql"
+    },
+    "storageAccounts_devopsdemodiagstrg_name": {
+      "value": "devopsdiagstrg"
+    },
+    "storageAccounts_devopsdemostrg_name": {
+      "value": "devopsstrg"
+    },
+    "serverfarms_PauldevopsDemoServicePlan_name": {
+      "value": "devopsServicePlan"
+    },
+    "sites_PauldevopsDemoWebQA_name": {
+      "value": "devopsWebQA"
+    },
+    "sites_PauldevopsDemoWebBG_name": {
+      "value": "devopsWebBG"
+    },
+    "sites_PauldevopsDemoWebDev_name": {
+      "value": "devopsWebDev"
+    },
+    "sites_PauldevopsDemoWeb_name": {
+      "value": "abelMHWeb"
+    },
+    "databases_master_name": {
+      "value": "abelmhdemosql/master"
+    },
+    "databases_PauldevopsDemoDBDev_name": {
+      "value": "abelmhdemosql/devopsDBDev"
+    },
+    "databases_PauldevopsDemoDBQA_name": {
+      "value": "abelmhdemosql/PauldevopsDemoDBQA"
+    },
+    "databases_PauldevopsDemoDB_name": {
+      "value": "abelmhdemosql/devopsDB"
+    },
+    "firewallRules_AllowAllWindowsAzureIps_name": {
+      "value": "abelmhdemosql/AllowAllWindowsAzureIps"
+    }
+
+  }
+}

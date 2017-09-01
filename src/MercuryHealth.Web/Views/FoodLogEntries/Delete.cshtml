@@ -1,0 +1,96 @@
+﻿@model MercuryHealth.Models.FoodLogEntry
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>FoodLogEntry</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MealTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MealTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Calories)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Calories)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProteinInGrams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProteinInGrams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FatInGrams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FatInGrams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarbohydratesInGrams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarbohydratesInGrams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SodiumInGrams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SodiumInGrams)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

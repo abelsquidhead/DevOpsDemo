@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.Web.Mvc.5.2.3.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Mvc.Fakes.ShimModelStateDictionary">
+            <summary>Shim type of System.Web.Mvc.ModelStateDictionary</summary>
+        </member>
+        <member name="M:System.Web.Mvc.Fakes.ShimModelStateDictionary.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Web.Mvc.Fakes.ShimModelStateDictionary.#ctor(System.Web.Mvc.ModelStateDictionary)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AddKeyValuePairOfStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.Add(KeyValuePair`2&lt;String,ModelState&gt; item)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AddModelErrorStringException">
+            <summary>Sets the shim of ModelStateDictionary.AddModelError(String key, Exception exception)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AddModelErrorStringString">
+            <summary>Sets the shim of ModelStateDictionary.AddModelError(String key, String errorMessage)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AddStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.Add(String key, ModelState value)</summary>
+        </member>
+        <member name="T:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.AddKeyValuePairOfStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.Add(KeyValuePair`2&lt;String,ModelState&gt; item)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.AddModelErrorStringException">
+            <summary>Sets the shim of ModelStateDictionary.AddModelError(String key, Exception exception)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.AddModelErrorStringString">
+            <summary>Sets the shim of ModelStateDictionary.AddModelError(String key, String errorMessage)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.AddStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.Add(String key, ModelState value)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.Clear">
+            <summary>Sets the shim of ModelStateDictionary.Clear()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.ContainsKeyString">
+            <summary>Sets the shim of ModelStateDictionary.ContainsKey(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.ContainsKeyValuePairOfStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.Contains(KeyValuePair`2&lt;String,ModelState&gt; item)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.CopyToKeyValuePairOfStringModelStateArrayInt32">
+            <summary>Sets the shim of ModelStateDictionary.CopyTo(KeyValuePair`2&lt;String,ModelState&gt;[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.CountGet">
+            <summary>Sets the shim of ModelStateDictionary.get_Count()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.GetEnumerator">
+            <summary>Sets the shim of ModelStateDictionary.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.GetModelStateForKeyString">
+            <summary>Sets the shim of ModelStateDictionary.GetModelStateForKey(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.InnerDictionaryGet">
+            <summary>Sets the shim of ModelStateDictionary.get_InnerDictionary()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.IsReadOnlyGet">
+            <summary>Sets the shim of ModelStateDictionary.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.IsValidFieldString">
+            <summary>Sets the shim of ModelStateDictionary.IsValidField(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.IsValidGet">
+            <summary>Sets the shim of ModelStateDictionary.get_IsValid()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.ItemGetString">
+            <summary>Sets the shim of ModelStateDictionary.get_Item(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.ItemSetStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.set_Item(String key, ModelState value)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.KeysGet">
+            <summary>Sets the shim of ModelStateDictionary.get_Keys()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.MergeModelStateDictionary">
+            <summary>Sets the shim of ModelStateDictionary.Merge(ModelStateDictionary dictionary)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.RemoveKeyValuePairOfStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.Remove(KeyValuePair`2&lt;String,ModelState&gt; item)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.RemoveString">
+            <summary>Sets the shim of ModelStateDictionary.Remove(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.SetModelValueStringValueProviderResult">
+            <summary>Sets the shim of ModelStateDictionary.SetModelValue(String key, ValueProviderResult value)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the shim of ModelStateDictionary.System.Collections.IEnumerable.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.TryGetValueStringModelStateOut">
+            <summary>Sets the shim of ModelStateDictionary.TryGetValue(String key, ModelState&amp; value)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.AllInstances.ValuesGet">
+            <summary>Sets the shim of ModelStateDictionary.get_Values()</summary>
+        </member>
+        <member name="M:System.Web.Mvc.Fakes.ShimModelStateDictionary.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Mvc.Fakes.ShimModelStateDictionary.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Web.Mvc.Fakes.ShimModelStateDictionary.Bind(System.Collections.IEnumerable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Web.Mvc.Fakes.ShimModelStateDictionary.Bind(System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState}})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Web.Mvc.Fakes.ShimModelStateDictionary.Bind(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Web.Mvc.ModelState}})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Web.Mvc.Fakes.ShimModelStateDictionary.Bind(System.Collections.Generic.IDictionary{System.String,System.Web.Mvc.ModelState})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.Clear">
+            <summary>Sets the shim of ModelStateDictionary.Clear()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.Constructor">
+            <summary>Sets the shim of ModelStateDictionary.ModelStateDictionary()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.ConstructorModelStateDictionary">
+            <summary>Sets the shim of ModelStateDictionary.ModelStateDictionary(ModelStateDictionary dictionary)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.ContainsKeyString">
+            <summary>Sets the shim of ModelStateDictionary.ContainsKey(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.ContainsKeyValuePairOfStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.Contains(KeyValuePair`2&lt;String,ModelState&gt; item)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.CopyToKeyValuePairOfStringModelStateArrayInt32">
+            <summary>Sets the shim of ModelStateDictionary.CopyTo(KeyValuePair`2&lt;String,ModelState&gt;[] array, Int32 arrayIndex)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.CountGet">
+            <summary>Sets the shim of ModelStateDictionary.get_Count()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.GetEnumerator">
+            <summary>Sets the shim of ModelStateDictionary.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.GetModelStateForKeyString">
+            <summary>Sets the shim of ModelStateDictionary.GetModelStateForKey(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.InnerDictionaryGet">
+            <summary>Sets the shim of ModelStateDictionary.get_InnerDictionary()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.IsReadOnlyGet">
+            <summary>Sets the shim of ModelStateDictionary.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.IsValidFieldString">
+            <summary>Sets the shim of ModelStateDictionary.IsValidField(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.IsValidGet">
+            <summary>Sets the shim of ModelStateDictionary.get_IsValid()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.ItemGetString">
+            <summary>Sets the shim of ModelStateDictionary.get_Item(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.ItemSetStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.set_Item(String key, ModelState value)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.KeysGet">
+            <summary>Sets the shim of ModelStateDictionary.get_Keys()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.MergeModelStateDictionary">
+            <summary>Sets the shim of ModelStateDictionary.Merge(ModelStateDictionary dictionary)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.RemoveKeyValuePairOfStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.Remove(KeyValuePair`2&lt;String,ModelState&gt; item)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.RemoveString">
+            <summary>Sets the shim of ModelStateDictionary.Remove(String key)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.SetModelValueStringValueProviderResult">
+            <summary>Sets the shim of ModelStateDictionary.SetModelValue(String key, ValueProviderResult value)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.SystemCollectionsIEnumerableGetEnumerator">
+            <summary>Sets the shim of ModelStateDictionary.System.Collections.IEnumerable.GetEnumerator()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.TryGetValueStringModelStateOut">
+            <summary>Sets the shim of ModelStateDictionary.TryGetValue(String key, ModelState&amp; value)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary.ValuesGet">
+            <summary>Sets the shim of ModelStateDictionary.get_Values()</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary._IsValidFieldb__2KeyValuePairOfStringModelState">
+            <summary>Sets the shim of ModelStateDictionary.&lt;IsValidField&gt;b__2(KeyValuePair`2&lt;String,ModelState&gt; entry)</summary>
+        </member>
+        <member name="P:System.Web.Mvc.Fakes.ShimModelStateDictionary._get_IsValidb__0ModelState">
+            <summary>Sets the shim of ModelStateDictionary.&lt;get_IsValid&gt;b__0(ModelState modelState)</summary>
+        </member>
+    </members>
+</doc>

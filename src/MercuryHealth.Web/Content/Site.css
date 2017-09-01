@@ -1,0 +1,47 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#HeaderBackground {
+  background-image: url('../Content/Health(1136x338).jpg');
+  width:1136px;
+  height:338px;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#HeaderBackground h1 {
+    line-height: 1;
+    font-size: 65px;
+    color: white;
+}
+#HeaderBackground p {
+    color: white;
+    line-height: 1.4;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 10px 10px 20px 20px;
+    background: rgba(255,255,255,.5);
+}

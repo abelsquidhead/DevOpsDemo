@@ -1,0 +1,708 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "virtualMachines_DevOpsDemoBuild_adminPassword": {
+      "defaultValue": null,
+      "type": "SecureString"
+    },
+    "virtualMachines_DevOpsDemoBuild_name": {
+      "defaultValue": "DevOpsDemoBuild",
+      "type": "String"
+    },
+    "components_pauldevopsdemoweb_name": {
+      "defaultValue": "abelMHWeb",
+      "type": "String"
+    },
+    "components_pauldevopsdemowebbg_name": {
+      "defaultValue": "devopswebbg",
+      "type": "String"
+    },
+    "components_pauldevopsdemowebdev_name": {
+      "defaultValue": "devopswebdev",
+      "type": "String"
+    },
+    "components_pauldevopsdemowebqa_name": {
+      "defaultValue": "devopswebqa",
+      "type": "String"
+    },
+    "networkInterfaces_devopsdemobuild273_name": {
+      "defaultValue": "devopsdemobuild273",
+      "type": "String"
+    },
+    "networkInterfaces_devopsdemobuild445_name": {
+      "defaultValue": "devopsdemobuild445",
+      "type": "String"
+    },
+    "networkSecurityGroups_DevOpsDemoBuild_nsg_name": {
+      "defaultValue": "DevOpsDemoBuild-nsg",
+      "type": "String"
+    },
+    "publicIPAddresses_DevOpsDemoBuild_ip_name": {
+      "defaultValue": "DevOpsDemoBuild-ip",
+      "type": "String"
+    },
+    "publicIPAddresses_DevOpsDemoBuildip_name": {
+      "defaultValue": "DevOpsDemoBuildip",
+      "type": "String"
+    },
+    "virtualNetworks_PauldevopsDemo_RG_vnet_name": {
+      "defaultValue": "PaulDevOpsDemo_RG-vnet",
+      "type": "String"
+    },
+    "servers_abelmhdemosql_name": {
+      "defaultValue": "pauldevopsdemosql",
+      "type": "String"
+    },
+    "storageAccounts_devopsdemodiagstrg_name": {
+      "defaultValue": "devopsdemodiagstrg",
+      "type": "String"
+    },
+    "storageAccounts_devopsdemostrg_name": {
+      "defaultValue": "devopsdemostrg",
+      "type": "String"
+    },
+    "serverfarms_PaulDevOpsDemoServicePlan_name": {
+      "defaultValue": "PaulDevOpsDemoServicePlan",
+      "type": "String"
+    },
+    "sites_PaulDevOpsDemoWebQA_name": {
+      "defaultValue": "PaulDevOpsDemoWebQA",
+      "type": "String"
+    },
+    "sites_PaulDevOpsDemoWebBG_name": {
+      "defaultValue": "DevOpsWebBG",
+      "type": "String"
+    },
+    "sites_PaulDevOpsDemoWebDev_name": {
+      "defaultValue": "DevOpsWebDev",
+      "type": "String"
+    },
+    "sites_PaulDevOpsDemoWeb_name": {
+      "defaultValue": "abelMHWeb",
+      "type": "String"
+    },
+    "databases_master_name": {
+      "defaultValue": "abelmhdemosql/master",
+      "type": "String"
+    },
+    "databases_PaulDevOpsDemoDBDev_name": {
+      "defaultValue": "abelmhdemosql/PaulDevOpsDemoDBDev",
+      "type": "String"
+    },
+    "databases_PaulDevOpsDemoDBQA_name": {
+      "defaultValue": "abelmhdemosql/PaulDevOpsDemoDBQA",
+      "type": "String"
+    },
+    "databases_PaulDevOpsDemoDB_name": {
+      "defaultValue": "abelmhdemosql/PaulDevOpsDemoDB",
+      "type": "String"
+    },
+    "firewallRules_AllowAllWindowsAzureIps_name": {
+      "defaultValue": "abelmhdemosql/AllowAllWindowsAzureIps",
+      "type": "String"
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Compute/virtualMachines/DevOpsDemoBuild'.",
+      "type": "Microsoft.Compute/virtualMachines",
+      "name": "[parameters('virtualMachines_DevOpsDemoBuild_name')]",
+      "apiVersion": "2015-06-15",
+      "location": "eastus",
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D2"
+        },
+        "storageProfile": {
+          "imageReference": {
+            "publisher": "MicrosoftVisualStudio",
+            "offer": "VisualStudio",
+            "sku": "VS-2015-Ent-VSU3-AzureSDK-291-WS2012R2",
+            "version": "latest"
+          },
+          "osDisk": {
+            "name": "[parameters('virtualMachines_DevOpsDemoBuild_name')]",
+            "createOption": "FromImage",
+            "vhd": {
+              "uri": "[concat('https', '://', parameters('storageAccounts_devopsdemostrg_name'), '.blob.core.windows.net', concat('/vhds/', parameters('virtualMachines_DevOpsDemoBuild_name'),'201671521300.vhd'))]"
+            },
+            "caching": "ReadWrite"
+          },
+          "dataDisks": []
+        },
+        "osProfile": {
+          "computerName": "[parameters('virtualMachines_DevOpsDemoBuild_name')]",
+          "adminUsername": "clouduser",
+          "windowsConfiguration": {
+            "provisionVMAgent": true,
+            "enableAutomaticUpdates": true
+          },
+          "secrets": [],
+          "adminPassword": "[parameters('virtualMachines_DevOpsDemoBuild_adminPassword')]"
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "id": "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_devopsdemobuild273_name'))]"
+            }
+          ]
+        }
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Storage/storageAccounts', parameters('storageAccounts_devopsdemostrg_name'))]",
+        "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_devopsdemobuild273_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/microsoft.insights/components/pauldevopsdemoweb'.",
+      "type": "microsoft.insights/components",
+      "kind": "web",
+      "name": "[parameters('components_pauldevopsdemoweb_name')]",
+      "apiVersion": "2014-04-01",
+      "location": "Central US",
+      "tags": {
+        "hidden-link:/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/sites/PaulDevOpsWeb": "Resource"
+      },
+      "properties": {
+        "ApplicationId": "[parameters('components_pauldevopsdemoweb_name')]"
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/microsoft.insights/components/pauldevopsdemowebbg'.",
+      "type": "microsoft.insights/components",
+      "kind": "web",
+      "name": "[parameters('components_pauldevopsdemowebbg_name')]",
+      "apiVersion": "2014-04-01",
+      "location": "Central US",
+      "tags": {
+        "hidden-link:/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/sites/PaulDevOpsWebBG": "Resource"
+      },
+      "properties": {
+        "ApplicationId": "[parameters('components_pauldevopsdemowebbg_name')]"
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/microsoft.insights/components/pauldevopsdemowebdev'.",
+      "type": "microsoft.insights/components",
+      "kind": "web",
+      "name": "[parameters('components_pauldevopsdemowebdev_name')]",
+      "apiVersion": "2014-04-01",
+      "location": "Central US",
+      "tags": {
+        "hidden-link:/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/sites/PaulDevOpsWebDev": "Resource"
+      },
+      "properties": {
+        "ApplicationId": "[parameters('components_pauldevopsdemowebdev_name')]"
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/microsoft.insights/components/pauldevopsdemowebqa'.",
+      "type": "microsoft.insights/components",
+      "kind": "web",
+      "name": "[parameters('components_pauldevopsdemowebqa_name')]",
+      "apiVersion": "2014-04-01",
+      "location": "Central US",
+      "tags": {
+        "hidden-link:/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/sites/PaulDevOpsWebQA": "Resource"
+      },
+      "properties": {
+        "ApplicationId": "[parameters('components_pauldevopsdemowebqa_name')]"
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Network/networkInterfaces/devopsdemobuild273'.",
+      "type": "Microsoft.Network/networkInterfaces",
+      "name": "[parameters('networkInterfaces_devopsdemobuild273_name')]",
+      "apiVersion": "2016-03-30",
+      "location": "eastus",
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "privateIPAddress": "10.2.0.5",
+              "privateIPAllocationMethod": "Dynamic",
+              "publicIPAddress": {
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_DevOpsDemoBuildip_name'))]"
+              },
+              "subnet": {
+                "id": "[concat(resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_PauldevopsDemo_RG_vnet_name')), '/subnets/default')]"
+              }
+            }
+          }
+        ],
+        "dnsSettings": {
+          "dnsServers": []
+        },
+        "enableIPForwarding": false,
+        "networkSecurityGroup": {
+          "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_DevOpsDemoBuild_nsg_name'))]"
+        }
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_DevOpsDemoBuildip_name'))]",
+        "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_PauldevopsDemo_RG_vnet_name'))]",
+        "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_DevOpsDemoBuild_nsg_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Network/networkInterfaces/devopsdemobuild445'.",
+      "type": "Microsoft.Network/networkInterfaces",
+      "name": "[parameters('networkInterfaces_devopsdemobuild445_name')]",
+      "apiVersion": "2016-03-30",
+      "location": "eastus",
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipconfig1",
+            "properties": {
+              "privateIPAddress": "10.2.0.4",
+              "privateIPAllocationMethod": "Dynamic",
+              "publicIPAddress": {
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_DevOpsDemoBuild_ip_name'))]"
+              },
+              "subnet": {
+                "id": "[concat(resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_PauldevopsDemo_RG_vnet_name')), '/subnets/default')]"
+              }
+            }
+          }
+        ],
+        "dnsSettings": {
+          "dnsServers": []
+        },
+        "enableIPForwarding": false,
+        "networkSecurityGroup": {
+          "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_DevOpsDemoBuild_nsg_name'))]"
+        }
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_DevOpsDemoBuild_ip_name'))]",
+        "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_PauldevopsDemo_RG_vnet_name'))]",
+        "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_DevOpsDemoBuild_nsg_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Network/networkSecurityGroups/DevOpsDemoBuild-nsg'.",
+      "type": "Microsoft.Network/networkSecurityGroups",
+      "name": "[parameters('networkSecurityGroups_DevOpsDemoBuild_nsg_name')]",
+      "apiVersion": "2016-03-30",
+      "location": "eastus",
+      "properties": {
+        "securityRules": [
+          {
+            "name": "default-allow-rdp",
+            "properties": {
+              "protocol": "TCP",
+              "sourcePortRange": "*",
+              "destinationPortRange": "3389",
+              "sourceAddressPrefix": "*",
+              "destinationAddressPrefix": "*",
+              "access": "Allow",
+              "priority": 1000,
+              "direction": "Inbound"
+            }
+          }
+        ]
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Network/publicIPAddresses/DevOpsDemoBuild-ip'.",
+      "type": "Microsoft.Network/publicIPAddresses",
+      "name": "[parameters('publicIPAddresses_DevOpsDemoBuild_ip_name')]",
+      "apiVersion": "2016-03-30",
+      "location": "eastus",
+      "properties": {
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 4
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Network/publicIPAddresses/DevOpsDemoBuildip'.",
+      "type": "Microsoft.Network/publicIPAddresses",
+      "name": "[parameters('publicIPAddresses_DevOpsDemoBuildip_name')]",
+      "apiVersion": "2016-03-30",
+      "location": "eastus",
+      "properties": {
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 4
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Network/virtualNetworks/PaulDevOpsDemo_RG-vnet'.",
+      "type": "Microsoft.Network/virtualNetworks",
+      "name": "[parameters('virtualNetworks_PauldevopsDemo_RG_vnet_name')]",
+      "apiVersion": "2016-03-30",
+      "location": "eastus",
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.2.0.0/16"
+          ]
+        },
+        "subnets": [
+          {
+            "name": "default",
+            "properties": {
+              "addressPrefix": "10.2.0.0/24"
+            }
+          }
+        ]
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Sql/servers/pauldevopsdemosql'.",
+      "type": "Microsoft.Sql/servers",
+      "kind": "v12.0",
+      "name": "[parameters('servers_abelmhdemosql_name')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "East US",
+      "properties": {
+        "administratorLogin": "clouduser",
+        "administratorLoginPassword": "[parameters('virtualMachines_DevOpsDemoBuild_adminPassword')]",
+        "version": "12.0"
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/pauldevopsdemo_rg/providers/Microsoft.Storage/storageAccounts/devopsdemodiagstrg'.",
+      "type": "Microsoft.Storage/storageAccounts",
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "kind": "Storage",
+      "name": "[parameters('storageAccounts_devopsdemodiagstrg_name')]",
+      "apiVersion": "2016-01-01",
+      "location": "eastus",
+      "tags": {},
+      "properties": {},
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/pauldevopsdemo_rg/providers/Microsoft.Storage/storageAccounts/devopsdemostrg'.",
+      "type": "Microsoft.Storage/storageAccounts",
+      "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+      },
+      "kind": "Storage",
+      "name": "[parameters('storageAccounts_devopsdemostrg_name')]",
+      "apiVersion": "2016-01-01",
+      "location": "eastus",
+      "tags": {},
+      "properties": {},
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/serverfarms/PaulDevOpsDemoServicePlan'.",
+      "type": "Microsoft.Web/serverfarms",
+      "sku": {
+        "name": "S1",
+        "tier": "Standard",
+        "size": "S1",
+        "family": "S",
+        "capacity": 1
+      },
+      "name": "[parameters('serverfarms_PaulDevOpsDemoServicePlan_name')]",
+      "apiVersion": "2015-08-01",
+      "location": "East US",
+      "properties": {
+        "name": "[parameters('serverfarms_PaulDevOpsDemoServicePlan_name')]",
+        "numberOfWorkers": 1
+      },
+      "resources": [],
+      "dependsOn": []
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/sites/PaulDevOpsDemoWebQA'.",
+      "type": "Microsoft.Web/sites",
+      "name": "[parameters('sites_PaulDevOpsDemoWebQA_name')]",
+      "apiVersion": "2015-08-01",
+      "location": "East US",
+      "tags": {
+        "hidden-related:/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourcegroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/serverfarms/PaulDevOpsDemoServicePlan": "empty"
+      },
+      "properties": {
+        "name": "[parameters('sites_PaulDevOpsDemoWebQA_name')]",
+        "hostNames": [
+          "devopswebqa.azurewebsites.net"
+        ],
+        "enabledHostNames": [
+          "devopswebqa.azurewebsites.net",
+          "devopswebqa.scm.azurewebsites.net"
+        ],
+        "hostNameSslStates": [
+          {
+            "name": "[concat(parameters('sites_PaulDevOpsDemoWebQA_name'),'devopswebqa.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          },
+          {
+            "name": "[concat(parameters('sites_PaulDevOpsDemoWebQA_name'),'devopswebqa.scm.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          }
+        ],
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_PaulDevOpsDemoServicePlan_name'))]"
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_PaulDevOpsDemoServicePlan_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/sites/PaulDevOpsDemoWebBG'.",
+      "type": "Microsoft.Web/sites",
+      "name": "[parameters('sites_PaulDevOpsDemoWebBG_name')]",
+      "apiVersion": "2015-08-01",
+      "location": "East US",
+      "tags": {
+        "hidden-related:/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourcegroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/serverfarms/DevOpsServicePlan": "empty"
+      },
+      "properties": {
+        "name": "[parameters('sites_PaulDevOpsDemoWebBG_name')]",
+        "hostNames": [
+          "devopswebbg.azurewebsites.net"
+        ],
+        "enabledHostNames": [
+          "devopswebbg.azurewebsites.net",
+          "devopswebbg.scm.azurewebsites.net"
+        ],
+        "hostNameSslStates": [
+          {
+            "name": "[concat(parameters('sites_PaulDevOpsDemoWebBG_name'),'devopswebbg.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          },
+          {
+            "name": "[concat(parameters('sites_PaulDevOpsDemoWebBG_name'),'devopswebbg.scm.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          }
+        ],
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_PaulDevOpsDemoServicePlan_name'))]"
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_PaulDevOpsDemoServicePlan_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/sites/PaulDevOpsDemoWebDev'.",
+      "type": "Microsoft.Web/sites",
+      "name": "[parameters('sites_PaulDevOpsDemoWebDev_name')]",
+      "apiVersion": "2015-08-01",
+      "location": "East US",
+      "tags": {
+        "hidden-related:/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourcegroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/serverfarms/DevOpsServicePlan": "empty"
+      },
+      "properties": {
+        "name": "[parameters('sites_PaulDevOpsDemoWebDev_name')]",
+        "hostNames": [
+          "devopswebdev.azurewebsites.net"
+        ],
+        "enabledHostNames": [
+          "devopswebdev.azurewebsites.net",
+          "devopswebdev.scm.azurewebsites.net"
+        ],
+        "hostNameSslStates": [
+          {
+            "name": "[concat(parameters('sites_PaulDevOpsDemoWebDev_name'),'devopswebdev.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          },
+          {
+            "name": "[concat(parameters('sites_PaulDevOpsDemoWebDev_name'),'devopswebdev.scm.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          }
+        ],
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_PaulDevOpsDemoServicePlan_name'))]"
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_PaulDevOpsDemoServicePlan_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/sites/PaulDevOpsDemoWeb'.",
+      "type": "Microsoft.Web/sites",
+      "name": "[parameters('sites_PaulDevOpsDemoWeb_name')]",
+      "apiVersion": "2015-08-01",
+      "location": "East US",
+      "tags": {
+        "hidden-related:/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourcegroups/PaulDevOpsDemo_RG/providers/Microsoft.Web/serverfarms/DevOpsServicePlan": "empty"
+      },
+      "properties": {
+        "name": "[parameters('sites_PaulDevOpsDemoWeb_name')]",
+        "hostNames": [
+          "abelMHWeb.azurewebsites.net"
+        ],
+        "enabledHostNames": [
+          "abelMHWeb.azurewebsites.net",
+          "abelMHWeb.scm.azurewebsites.net"
+        ],
+        "hostNameSslStates": [
+          {
+            "name": "[concat(parameters('sites_PaulDevOpsDemoWeb_name'),'abelMHWeb.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          },
+          {
+            "name": "[concat(parameters('sites_PaulDevOpsDemoWeb_name'),'abelMHWeb.scm.azurewebsites.net')]",
+            "sslState": 0,
+            "thumbprint": null,
+            "ipBasedSslState": 0
+          }
+        ],
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_PaulDevOpsDemoServicePlan_name'))]"
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarms_PaulDevOpsDemoServicePlan_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Sql/servers/pauldevopsdemosql/databases/master'.",
+      "type": "Microsoft.Sql/servers/databases",
+      "kind": "v12.0,system",
+      "name": "[parameters('databases_master_name')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "East US",
+      "properties": {
+        "edition": "System",
+        "status": "Online",
+        "serviceLevelObjective": "System2",
+        "collation": "SQL_Latin1_General_CP1_CI_AS",
+        "maxSizeBytes": "32212254720",
+        "requestedServiceObjectiveName": "System2",
+        "defaultSecondaryLocation": "West US",
+        "earliestRestoreDate": null,
+        "elasticPoolName": null,
+        "containmentState": 2
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', parameters('servers_abelmhdemosql_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Sql/servers/pauldevopsdemosql/databases/PaulDevOpsDemoDBDev'.",
+      "type": "Microsoft.Sql/servers/databases",
+      "kind": "v12.0,user",
+      "name": "[parameters('databases_PaulDevOpsDemoDBDev_name')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "East US",
+      "properties": {
+        "edition": "Standard",
+        "status": "Online",
+        "serviceLevelObjective": "S3",
+        "collation": "SQL_Latin1_General_CP1_CI_AS",
+        "maxSizeBytes": "268435456000",
+        "requestedServiceObjectiveName": "S3",
+        "defaultSecondaryLocation": "West US",
+        "earliestRestoreDate": "2016-08-15T23:39:02.247Z",
+        "elasticPoolName": null,
+        "containmentState": 2
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', parameters('servers_abelmhdemosql_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Sql/servers/pauldevopsdemosql/databases/PaulDevOpsDemoDBQA'.",
+      "type": "Microsoft.Sql/servers/databases",
+      "kind": "v12.0,user",
+      "name": "[parameters('databases_PaulDevOpsDemoDBQA_name')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "East US",
+      "properties": {
+        "edition": "Standard",
+        "status": "Online",
+        "serviceLevelObjective": "S3",
+        "collation": "SQL_Latin1_General_CP1_CI_AS",
+        "maxSizeBytes": "268435456000",
+        "requestedServiceObjectiveName": "S3",
+        "defaultSecondaryLocation": "West US",
+        "earliestRestoreDate": "2016-08-15T23:41:20.85Z",
+        "elasticPoolName": null,
+        "containmentState": 2
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', parameters('servers_abelmhdemosql_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Sql/servers/pauldevopsdemosql/databases/PaulDevOpsDemoDB'.",
+      "type": "Microsoft.Sql/servers/databases",
+      "kind": "v12.0,user",
+      "name": "[parameters('databases_PaulDevOpsDemoDB_name')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "East US",
+      "properties": {
+        "edition": "Standard",
+        "status": "Online",
+        "serviceLevelObjective": "S3",
+        "collation": "SQL_Latin1_General_CP1_CI_AS",
+        "maxSizeBytes": "268435456000",
+        "requestedServiceObjectiveName": "S3",
+        "defaultSecondaryLocation": "West US",
+        "elasticPoolName": null,
+        "containmentState": 2
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', parameters('servers_abelmhdemosql_name'))]"
+      ]
+    },
+    {
+      "comments": "Generalized from resource: '/subscriptions/24b189e9-d338-435f-a60f-3491b68bc8a2/resourceGroups/PaulDevOpsDemo_RG/providers/Microsoft.Sql/servers/pauldevopsdemosql/firewallRules/AllowAllWindowsAzureIps'.",
+      "type": "Microsoft.Sql/servers/firewallRules",
+      "kind": "v12.0",
+      "name": "[parameters('firewallRules_AllowAllWindowsAzureIps_name')]",
+      "apiVersion": "2014-04-01-preview",
+      "location": "East US",
+      "properties": {
+        "startIpAddress": "0.0.0.0",
+        "endIpAddress": "0.0.0.0"
+      },
+      "resources": [],
+      "dependsOn": [
+        "[resourceId('Microsoft.Sql/servers', parameters('servers_abelmhdemosql_name'))]"
+      ]
+    }
+  ]
+}

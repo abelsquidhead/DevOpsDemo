@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MercuryHealth.Web.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository">
+            <summary>Stub type of MercuryHealth.Web.Models.IFoodLogEntryRepository</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.#ctor">
+            <summary>Initializes a new instance of type StubIFoodLogEntryRepository</summary>
+        </member>
+        <member name="F:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.CreateFoodLogEntry">
+            <summary>Sets the stub of IFoodLogEntryRepository.Create(FoodLogEntry newFoodLogEntry)</summary>
+        </member>
+        <member name="F:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.DeleteInt32">
+            <summary>Sets the stub of IFoodLogEntryRepository.Delete(Int32 id)</summary>
+        </member>
+        <member name="F:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.GetAll">
+            <summary>Sets the stub of IFoodLogEntryRepository.GetAll()</summary>
+        </member>
+        <member name="F:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.GetNullableOfInt32">
+            <summary>Sets the stub of IFoodLogEntryRepository.Get(Nullable`1&lt;Int32&gt; id)</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.MercuryHealth#Web#Models#IFoodLogEntryRepository#Create(MercuryHealth.Models.FoodLogEntry)">
+            <summary>Sets the stub of IFoodLogEntryRepository.Create(FoodLogEntry newFoodLogEntry)</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.MercuryHealth#Web#Models#IFoodLogEntryRepository#Delete(System.Int32)">
+            <summary>Sets the stub of IFoodLogEntryRepository.Delete(Int32 id)</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.MercuryHealth#Web#Models#IFoodLogEntryRepository#Get(System.Nullable{System.Int32})">
+            <summary>Sets the stub of IFoodLogEntryRepository.Get(Nullable`1&lt;Int32&gt; id)</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.MercuryHealth#Web#Models#IFoodLogEntryRepository#GetAll">
+            <summary>Sets the stub of IFoodLogEntryRepository.GetAll()</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.MercuryHealth#Web#Models#IFoodLogEntryRepository#Update(MercuryHealth.Models.FoodLogEntry)">
+            <summary>Sets the stub of IFoodLogEntryRepository.Update(FoodLogEntry updatedFoodLogEntry)</summary>
+        </member>
+        <member name="F:MercuryHealth.Web.Models.Fakes.StubIFoodLogEntryRepository.UpdateFoodLogEntry">
+            <summary>Sets the stub of IFoodLogEntryRepository.Update(FoodLogEntry updatedFoodLogEntry)</summary>
+        </member>
+        <member name="T:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository">
+            <summary>Shim type of MercuryHealth.Web.Utilities.UserRepository</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository.#ctor(MercuryHealth.Web.Utilities.UserRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository.AllInstances.GetUserInt32">
+            <summary>Sets the shim of UserRepository.GetUser(Int32 userId)</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository.Constructor">
+            <summary>Sets the shim of UserRepository.UserRepository()</summary>
+        </member>
+        <member name="P:MercuryHealth.Web.Utilities.Fakes.ShimUserRepository.GetUserInt32">
+            <summary>Sets the shim of UserRepository.GetUser(Int32 userId)</summary>
+        </member>
+    </members>
+</doc>

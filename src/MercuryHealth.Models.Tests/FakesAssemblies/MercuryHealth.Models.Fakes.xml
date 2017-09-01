@@ -1,0 +1,752 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MercuryHealth.Models.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator">
+            <summary>Shim type of MercuryHealth.Models.CaloricIntakeCalculator</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator.#ctor(MercuryHealth.Models.CaloricIntakeCalculator)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator.AllInstances.CalculateDailyCaloricIntakeDoubleExerciseLevel">
+            <summary>Sets the shim of CaloricIntakeCalculator.CalculateDailyCaloricIntake(Double bmr, ExerciseLevel exerciseLevel)</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator.CalculateDailyCaloricIntakeDoubleExerciseLevel">
+            <summary>Sets the shim of CaloricIntakeCalculator.CalculateDailyCaloricIntake(Double bmr, ExerciseLevel exerciseLevel)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimCaloricIntakeCalculator.Constructor">
+            <summary>Sets the shim of CaloricIntakeCalculator.CaloricIntakeCalculator()</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimExercise">
+            <summary>Shim type of MercuryHealth.Models.Exercise</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimExercise.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimExercise.#ctor(MercuryHealth.Models.Exercise)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimExercise.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.DescriptionGet">
+            <summary>Sets the shim of Exercise.get_Description()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.DescriptionSetString">
+            <summary>Sets the shim of Exercise.set_Description(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.EquipmentGet">
+            <summary>Sets the shim of Exercise.get_Equipment()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.EquipmentSetString">
+            <summary>Sets the shim of Exercise.set_Equipment(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.IdGet">
+            <summary>Sets the shim of Exercise.get_Id()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.IdSetGuid">
+            <summary>Sets the shim of Exercise.set_Id(Guid value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.ImageUrlsGet">
+            <summary>Sets the shim of Exercise.get_ImageUrls()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.ImageUrlsSetDictionaryOfInt32String">
+            <summary>Sets the shim of Exercise.set_ImageUrls(Dictionary`2&lt;Int32,String&gt; value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.MusclesInvolvedGet">
+            <summary>Sets the shim of Exercise.get_MusclesInvolved()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.MusclesInvolvedSetString">
+            <summary>Sets the shim of Exercise.set_MusclesInvolved(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.NameGet">
+            <summary>Sets the shim of Exercise.get_Name()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.NameSetString">
+            <summary>Sets the shim of Exercise.set_Name(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.RelatedExercisesGet">
+            <summary>Sets the shim of Exercise.get_RelatedExercises()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.RelatedExercisesSetListOfExercise">
+            <summary>Sets the shim of Exercise.set_RelatedExercises(List`1&lt;Exercise&gt; value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.VideoUrlGet">
+            <summary>Sets the shim of Exercise.get_VideoUrl()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.AllInstances.VideoUrlSetString">
+            <summary>Sets the shim of Exercise.set_VideoUrl(String value)</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimExercise.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimExercise.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.Constructor">
+            <summary>Sets the shim of Exercise.Exercise()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.DescriptionGet">
+            <summary>Sets the shim of Exercise.get_Description()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.DescriptionSetString">
+            <summary>Sets the shim of Exercise.set_Description(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.EquipmentGet">
+            <summary>Sets the shim of Exercise.get_Equipment()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.EquipmentSetString">
+            <summary>Sets the shim of Exercise.set_Equipment(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.IdGet">
+            <summary>Sets the shim of Exercise.get_Id()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.IdSetGuid">
+            <summary>Sets the shim of Exercise.set_Id(Guid value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.ImageUrlsGet">
+            <summary>Sets the shim of Exercise.get_ImageUrls()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.ImageUrlsSetDictionaryOfInt32String">
+            <summary>Sets the shim of Exercise.set_ImageUrls(Dictionary`2&lt;Int32,String&gt; value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.MusclesInvolvedGet">
+            <summary>Sets the shim of Exercise.get_MusclesInvolved()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.MusclesInvolvedSetString">
+            <summary>Sets the shim of Exercise.set_MusclesInvolved(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.NameGet">
+            <summary>Sets the shim of Exercise.get_Name()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.NameSetString">
+            <summary>Sets the shim of Exercise.set_Name(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.RelatedExercisesGet">
+            <summary>Sets the shim of Exercise.get_RelatedExercises()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.RelatedExercisesSetListOfExercise">
+            <summary>Sets the shim of Exercise.set_RelatedExercises(List`1&lt;Exercise&gt; value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.VideoUrlGet">
+            <summary>Sets the shim of Exercise.get_VideoUrl()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimExercise.VideoUrlSetString">
+            <summary>Sets the shim of Exercise.set_VideoUrl(String value)</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimFoodLogEntry">
+            <summary>Shim type of MercuryHealth.Models.FoodLogEntry</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimFoodLogEntry.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimFoodLogEntry.#ctor(MercuryHealth.Models.FoodLogEntry)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.CaloriesGet">
+            <summary>Sets the shim of FoodLogEntry.get_Calories()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.CaloriesSetInt32">
+            <summary>Sets the shim of FoodLogEntry.set_Calories(Int32 value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.CarbohydratesInGramsGet">
+            <summary>Sets the shim of FoodLogEntry.get_CarbohydratesInGrams()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.CarbohydratesInGramsSetDecimal">
+            <summary>Sets the shim of FoodLogEntry.set_CarbohydratesInGrams(Decimal value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.ColorGet">
+            <summary>Sets the shim of FoodLogEntry.get_Color()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.ColorSetString">
+            <summary>Sets the shim of FoodLogEntry.set_Color(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.DescriptionGet">
+            <summary>Sets the shim of FoodLogEntry.get_Description()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.DescriptionSetString">
+            <summary>Sets the shim of FoodLogEntry.set_Description(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.FatInGramsGet">
+            <summary>Sets the shim of FoodLogEntry.get_FatInGrams()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.FatInGramsSetDecimal">
+            <summary>Sets the shim of FoodLogEntry.set_FatInGrams(Decimal value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.IdGet">
+            <summary>Sets the shim of FoodLogEntry.get_Id()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.IdSetInt32">
+            <summary>Sets the shim of FoodLogEntry.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.MealTimeGet">
+            <summary>Sets the shim of FoodLogEntry.get_MealTime()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.MealTimeSetDateTime">
+            <summary>Sets the shim of FoodLogEntry.set_MealTime(DateTime value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.MemberProfileGet">
+            <summary>Sets the shim of FoodLogEntry.get_MemberProfile()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.MemberProfileSetMemberProfile">
+            <summary>Sets the shim of FoodLogEntry.set_MemberProfile(MemberProfile value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.ProteinInGramsGet">
+            <summary>Sets the shim of FoodLogEntry.get_ProteinInGrams()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.ProteinInGramsSetDecimal">
+            <summary>Sets the shim of FoodLogEntry.set_ProteinInGrams(Decimal value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.QuantityGet">
+            <summary>Sets the shim of FoodLogEntry.get_Quantity()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.QuantitySetSingle">
+            <summary>Sets the shim of FoodLogEntry.set_Quantity(Single value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.SodiumInGramsGet">
+            <summary>Sets the shim of FoodLogEntry.get_SodiumInGrams()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.SodiumInGramsSetDecimal">
+            <summary>Sets the shim of FoodLogEntry.set_SodiumInGrams(Decimal value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.TagsGet">
+            <summary>Sets the shim of FoodLogEntry.get_Tags()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.AllInstances.TagsSetString">
+            <summary>Sets the shim of FoodLogEntry.set_Tags(String value)</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimFoodLogEntry.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimFoodLogEntry.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.CaloriesGet">
+            <summary>Sets the shim of FoodLogEntry.get_Calories()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.CaloriesSetInt32">
+            <summary>Sets the shim of FoodLogEntry.set_Calories(Int32 value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.CarbohydratesInGramsGet">
+            <summary>Sets the shim of FoodLogEntry.get_CarbohydratesInGrams()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.CarbohydratesInGramsSetDecimal">
+            <summary>Sets the shim of FoodLogEntry.set_CarbohydratesInGrams(Decimal value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.ColorGet">
+            <summary>Sets the shim of FoodLogEntry.get_Color()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.ColorSetString">
+            <summary>Sets the shim of FoodLogEntry.set_Color(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.Constructor">
+            <summary>Sets the shim of FoodLogEntry.FoodLogEntry()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.DescriptionGet">
+            <summary>Sets the shim of FoodLogEntry.get_Description()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.DescriptionSetString">
+            <summary>Sets the shim of FoodLogEntry.set_Description(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.FatInGramsGet">
+            <summary>Sets the shim of FoodLogEntry.get_FatInGrams()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.FatInGramsSetDecimal">
+            <summary>Sets the shim of FoodLogEntry.set_FatInGrams(Decimal value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.IdGet">
+            <summary>Sets the shim of FoodLogEntry.get_Id()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.IdSetInt32">
+            <summary>Sets the shim of FoodLogEntry.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.MealTimeGet">
+            <summary>Sets the shim of FoodLogEntry.get_MealTime()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.MealTimeSetDateTime">
+            <summary>Sets the shim of FoodLogEntry.set_MealTime(DateTime value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.MemberProfileGet">
+            <summary>Sets the shim of FoodLogEntry.get_MemberProfile()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.MemberProfileSetMemberProfile">
+            <summary>Sets the shim of FoodLogEntry.set_MemberProfile(MemberProfile value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.ProteinInGramsGet">
+            <summary>Sets the shim of FoodLogEntry.get_ProteinInGrams()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.ProteinInGramsSetDecimal">
+            <summary>Sets the shim of FoodLogEntry.set_ProteinInGrams(Decimal value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.QuantityGet">
+            <summary>Sets the shim of FoodLogEntry.get_Quantity()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.QuantitySetSingle">
+            <summary>Sets the shim of FoodLogEntry.set_Quantity(Single value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.SodiumInGramsGet">
+            <summary>Sets the shim of FoodLogEntry.get_SodiumInGrams()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.SodiumInGramsSetDecimal">
+            <summary>Sets the shim of FoodLogEntry.set_SodiumInGrams(Decimal value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.TagsGet">
+            <summary>Sets the shim of FoodLogEntry.get_Tags()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimFoodLogEntry.TagsSetString">
+            <summary>Sets the shim of FoodLogEntry.set_Tags(String value)</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator">
+            <summary>Shim type of MercuryHealth.Models.HarrisBenedictPrincipleCalculator</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.#ctor(MercuryHealth.Models.HarrisBenedictPrincipleCalculator)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.AllInstances.CalculateBmrGenderInt32Int32Int32">
+            <summary>Sets the shim of HarrisBenedictPrincipleCalculator.CalculateBmr(Gender gender, Int32 weightInKilograms, Int32 heightInCentimeters, Int32 ageInYears)</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.Bind(MercuryHealth.Models.IBasalMetabolicRateCalculator)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.CalculateBmrGenderInt32Int32Int32">
+            <summary>Sets the shim of HarrisBenedictPrincipleCalculator.CalculateBmr(Gender gender, Int32 weightInKilograms, Int32 heightInCentimeters, Int32 ageInYears)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimHarrisBenedictPrincipleCalculator.Constructor">
+            <summary>Sets the shim of HarrisBenedictPrincipleCalculator.HarrisBenedictPrincipleCalculator()</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimMemberProfile">
+            <summary>Shim type of MercuryHealth.Models.MemberProfile</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMemberProfile.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMemberProfile.#ctor(MercuryHealth.Models.MemberProfile)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AgeGet">
+            <summary>Sets the shim of MemberProfile.get_Age()</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.AgeGet">
+            <summary>Sets the shim of MemberProfile.get_Age()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.BioGet">
+            <summary>Sets the shim of MemberProfile.get_Bio()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.BioSetString">
+            <summary>Sets the shim of MemberProfile.set_Bio(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.BirthdateGet">
+            <summary>Sets the shim of MemberProfile.get_Birthdate()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.BirthdateSetDateTime">
+            <summary>Sets the shim of MemberProfile.set_Birthdate(DateTime value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.CalculateAge">
+            <summary>Sets the shim of MemberProfile.CalculateAge()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.CalculateAgeDateTime">
+            <summary>Sets the shim of MemberProfile.CalculateAge(DateTime birthDate)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.GenderGet">
+            <summary>Sets the shim of MemberProfile.get_Gender()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.GenderSetGender">
+            <summary>Sets the shim of MemberProfile.set_Gender(Gender value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.HeightInCentimetersGet">
+            <summary>Sets the shim of MemberProfile.get_HeightInCentimeters()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.HeightInCentimetersSetInt32">
+            <summary>Sets the shim of MemberProfile.set_HeightInCentimeters(Int32 value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.IdGet">
+            <summary>Sets the shim of MemberProfile.get_Id()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.IdSetInt32">
+            <summary>Sets the shim of MemberProfile.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.WeightInKilogramsGet">
+            <summary>Sets the shim of MemberProfile.get_WeightInKilograms()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.AllInstances.WeightInKilogramsSetInt32">
+            <summary>Sets the shim of MemberProfile.set_WeightInKilograms(Int32 value)</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMemberProfile.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMemberProfile.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.BioGet">
+            <summary>Sets the shim of MemberProfile.get_Bio()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.BioSetString">
+            <summary>Sets the shim of MemberProfile.set_Bio(String value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.BirthdateGet">
+            <summary>Sets the shim of MemberProfile.get_Birthdate()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.BirthdateSetDateTime">
+            <summary>Sets the shim of MemberProfile.set_Birthdate(DateTime value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.CalculateAge">
+            <summary>Sets the shim of MemberProfile.CalculateAge()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.CalculateAgeDateTime">
+            <summary>Sets the shim of MemberProfile.CalculateAge(DateTime birthDate)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.Constructor">
+            <summary>Sets the shim of MemberProfile.MemberProfile()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.GenderGet">
+            <summary>Sets the shim of MemberProfile.get_Gender()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.GenderSetGender">
+            <summary>Sets the shim of MemberProfile.set_Gender(Gender value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.HeightInCentimetersGet">
+            <summary>Sets the shim of MemberProfile.get_HeightInCentimeters()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.HeightInCentimetersSetInt32">
+            <summary>Sets the shim of MemberProfile.set_HeightInCentimeters(Int32 value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.IdGet">
+            <summary>Sets the shim of MemberProfile.get_Id()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.IdSetInt32">
+            <summary>Sets the shim of MemberProfile.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.WeightInKilogramsGet">
+            <summary>Sets the shim of MemberProfile.get_WeightInKilograms()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMemberProfile.WeightInKilogramsSetInt32">
+            <summary>Sets the shim of MemberProfile.set_WeightInKilograms(Int32 value)</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator">
+            <summary>Shim type of MercuryHealth.Models.MifflinStJeorEquationCalculator</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.#ctor(MercuryHealth.Models.MifflinStJeorEquationCalculator)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.AllInstances.CalculateBmrGenderInt32Int32Int32">
+            <summary>Sets the shim of MifflinStJeorEquationCalculator.CalculateBmr(Gender gender, Int32 weightInKilograms, Int32 heightInCentimeters, Int32 ageInYears)</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.Bind(MercuryHealth.Models.IBasalMetabolicRateCalculator)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.CalculateBmrGenderInt32Int32Int32">
+            <summary>Sets the shim of MifflinStJeorEquationCalculator.CalculateBmr(Gender gender, Int32 weightInKilograms, Int32 heightInCentimeters, Int32 ageInYears)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMifflinStJeorEquationCalculator.Constructor">
+            <summary>Sets the shim of MifflinStJeorEquationCalculator.MifflinStJeorEquationCalculator()</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel">
+            <summary>Shim type of MercuryHealth.Models.MyMetricsViewModel</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.#ctor(MercuryHealth.Models.MyMetricsViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.AllInstances.BmrCalculatorOptionGet">
+            <summary>Sets the shim of MyMetricsViewModel.get_BmrCalculatorOption()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.AllInstances.BmrCalculatorOptionSetBmrCalculatorOption">
+            <summary>Sets the shim of MyMetricsViewModel.set_BmrCalculatorOption(BmrCalculatorOption value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.AllInstances.BmrGet">
+            <summary>Sets the shim of MyMetricsViewModel.get_Bmr()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.AllInstances.CalculateBmrBmrCalculatorOptionMemberProfile">
+            <summary>Sets the shim of MyMetricsViewModel.CalculateBmr(BmrCalculatorOption calculatorOption, MemberProfile profile)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.AllInstances.MemberProfileGet">
+            <summary>Sets the shim of MyMetricsViewModel.get_MemberProfile()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.AllInstances.MemberProfileSetMemberProfile">
+            <summary>Sets the shim of MyMetricsViewModel.set_MemberProfile(MemberProfile value)</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.BmrCalculatorOptionGet">
+            <summary>Sets the shim of MyMetricsViewModel.get_BmrCalculatorOption()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.BmrCalculatorOptionSetBmrCalculatorOption">
+            <summary>Sets the shim of MyMetricsViewModel.set_BmrCalculatorOption(BmrCalculatorOption value)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.BmrGet">
+            <summary>Sets the shim of MyMetricsViewModel.get_Bmr()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.CalculateBmrBmrCalculatorOptionMemberProfile">
+            <summary>Sets the shim of MyMetricsViewModel.CalculateBmr(BmrCalculatorOption calculatorOption, MemberProfile profile)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.Constructor">
+            <summary>Sets the shim of MyMetricsViewModel.MyMetricsViewModel()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.MemberProfileGet">
+            <summary>Sets the shim of MyMetricsViewModel.get_MemberProfile()</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimMyMetricsViewModel.MemberProfileSetMemberProfile">
+            <summary>Sets the shim of MyMetricsViewModel.set_MemberProfile(MemberProfile value)</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimRdeeCalculator">
+            <summary>Shim type of MercuryHealth.Models.RdeeCalculator</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimRdeeCalculator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimRdeeCalculator.#ctor(MercuryHealth.Models.RdeeCalculator)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.ShimRdeeCalculator.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimRdeeCalculator.AllInstances.CalculateRdeeInt32Double">
+            <summary>Sets the shim of RdeeCalculator.CalculateRdee(Int32 weightInKilograms, Double bodyFatPercentage)</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimRdeeCalculator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.ShimRdeeCalculator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimRdeeCalculator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimRdeeCalculator.CalculateRdeeInt32Double">
+            <summary>Sets the shim of RdeeCalculator.CalculateRdee(Int32 weightInKilograms, Double bodyFatPercentage)</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.ShimRdeeCalculator.Constructor">
+            <summary>Sets the shim of RdeeCalculator.RdeeCalculator()</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.StubCaloricIntakeCalculator">
+            <summary>Stub type of MercuryHealth.Models.CaloricIntakeCalculator</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubCaloricIntakeCalculator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubCaloricIntakeCalculator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubCaloricIntakeCalculator.InitializeStub">
+            <summary>Initializes a new instance of type StubCaloricIntakeCalculator</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubCaloricIntakeCalculator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubCaloricIntakeCalculator.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.StubExercise">
+            <summary>Stub type of MercuryHealth.Models.Exercise</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubExercise.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubExercise.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubExercise.InitializeStub">
+            <summary>Initializes a new instance of type StubExercise</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubExercise.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubExercise.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.StubFoodLogEntry">
+            <summary>Stub type of MercuryHealth.Models.FoodLogEntry</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubFoodLogEntry.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubFoodLogEntry.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubFoodLogEntry.InitializeStub">
+            <summary>Initializes a new instance of type StubFoodLogEntry</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubFoodLogEntry.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubFoodLogEntry.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.StubHarrisBenedictPrincipleCalculator">
+            <summary>Stub type of MercuryHealth.Models.HarrisBenedictPrincipleCalculator</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubHarrisBenedictPrincipleCalculator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubHarrisBenedictPrincipleCalculator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubHarrisBenedictPrincipleCalculator.InitializeStub">
+            <summary>Initializes a new instance of type StubHarrisBenedictPrincipleCalculator</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubHarrisBenedictPrincipleCalculator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubHarrisBenedictPrincipleCalculator.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.StubIBasalMetabolicRateCalculator">
+            <summary>Stub type of MercuryHealth.Models.IBasalMetabolicRateCalculator</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubIBasalMetabolicRateCalculator.#ctor">
+            <summary>Initializes a new instance of type StubIBasalMetabolicRateCalculator</summary>
+        </member>
+        <member name="F:MercuryHealth.Models.Fakes.StubIBasalMetabolicRateCalculator.CalculateBmrGenderInt32Int32Int32">
+            <summary>Sets the stub of IBasalMetabolicRateCalculator.CalculateBmr(Gender gender, Int32 weightInKilograms, Int32 heightInCentimeters, Int32 ageInYears)</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubIBasalMetabolicRateCalculator.MercuryHealth#Models#IBasalMetabolicRateCalculator#CalculateBmr(MercuryHealth.Models.Gender,System.Int32,System.Int32,System.Int32)">
+            <summary>Sets the stub of IBasalMetabolicRateCalculator.CalculateBmr(Gender gender, Int32 weightInKilograms, Int32 heightInCentimeters, Int32 ageInYears)</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.StubMemberProfile">
+            <summary>Stub type of MercuryHealth.Models.MemberProfile</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubMemberProfile.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubMemberProfile.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubMemberProfile.InitializeStub">
+            <summary>Initializes a new instance of type StubMemberProfile</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubMemberProfile.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubMemberProfile.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.StubMifflinStJeorEquationCalculator">
+            <summary>Stub type of MercuryHealth.Models.MifflinStJeorEquationCalculator</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubMifflinStJeorEquationCalculator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubMifflinStJeorEquationCalculator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubMifflinStJeorEquationCalculator.InitializeStub">
+            <summary>Initializes a new instance of type StubMifflinStJeorEquationCalculator</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubMifflinStJeorEquationCalculator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubMifflinStJeorEquationCalculator.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.StubMyMetricsViewModel">
+            <summary>Stub type of MercuryHealth.Models.MyMetricsViewModel</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubMyMetricsViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubMyMetricsViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubMyMetricsViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubMyMetricsViewModel</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubMyMetricsViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubMyMetricsViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MercuryHealth.Models.Fakes.StubRdeeCalculator">
+            <summary>Stub type of MercuryHealth.Models.RdeeCalculator</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubRdeeCalculator.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubRdeeCalculator.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MercuryHealth.Models.Fakes.StubRdeeCalculator.InitializeStub">
+            <summary>Initializes a new instance of type StubRdeeCalculator</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubRdeeCalculator.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MercuryHealth.Models.Fakes.StubRdeeCalculator.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,96 @@
+﻿@model MercuryHealth.Models.FoodLogEntry
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FoodLogEntry</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MealTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MealTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Calories)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Calories)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProteinInGrams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProteinInGrams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FatInGrams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FatInGrams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarbohydratesInGrams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarbohydratesInGrams)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SodiumInGrams)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SodiumInGrams)
+            pbi335 pbi #355
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+ @*  *@ 

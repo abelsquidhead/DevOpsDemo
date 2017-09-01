@@ -1,0 +1,90 @@
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.AppSettingsSection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.CallbackValidator: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.CallbackValidatorAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.CommaDelimitedStringCollectionConverter: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.Configuration: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationAllowDefinition: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationAllowExeDefinition: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationCollectionAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationElementCollectionType: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationElementProperty: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationLocation: type has no family visible contructors.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationLocationCollection: type has no family visible contructors.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationLockCollection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationManager: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationPermissionAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationPermission: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationProperty: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationPropertyAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationPropertyOptions: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationSaveMode: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationSectionCollection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationSectionGroupCollection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConfigurationUserLevel: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConnectionStringSettings: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConnectionStringSettingsCollection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ConnectionStringsSection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ContextInformation: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.DefaultSection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.DefaultValidator: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.DpapiProtectedConfigurationProvider: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ElementInformation: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ExeConfigurationFileMap: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ExeContext: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.GenericEnumConverter: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.IgnoreSection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.InfiniteIntConverter: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.InfiniteTimeSpanConverter: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.IntegerValidatorAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.LongValidatorAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.NameValueConfigurationCollection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.NameValueConfigurationElement: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.OverrideMode: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.PositiveTimeSpanValidatorAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.PropertyInformation: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.PropertyInformationCollection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.PropertyValueOrigin: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ProtectedConfiguration: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ProtectedConfigurationSection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ProviderSettings: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ProviderSettingsCollection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.RegexStringValidatorAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.RsaProtectedConfigurationProvider: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.SectionInformation: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.CommaDelimitedStringCollection: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.StringValidatorAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.SubclassTypeValidator: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.SubclassTypeValidatorAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.TimeSpanMinutesOrInfiniteConverter: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.TimeSpanSecondsOrInfiniteConverter: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.TimeSpanValidatorAttribute: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.TypeNameConverter: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.ValidatorCallback: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.WhiteSpaceTrimStringConverter: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.Internal.InternalConfigEventArgs: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.Internal.InternalConfigEventHandler: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for System.Configuration.Internal.StreamChangeCallback: type is sealed.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate stub for <PrivateImplementationDetails>{93A4BEAA-EB64-4423-B4F3-74C8A16E9AD7}: type is not supported because of internal limitations.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IInternalConfigRecord: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IInternalConfigHost: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IInternalConfigClientHost: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IInternalConfigSystem: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.ConfigurationAllowDefinition: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.ConfigurationAllowExeDefinition: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.ConfigurationElementCollectionType: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.ConfigurationPropertyOptions: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.ConfigurationSaveMode: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.ConfigurationUserLevel: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IConfigErrorInfo: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.OverrideMode: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.PropertyValueOrigin: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.ValidatorCallback: type is a delegate.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IConfigSystem: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IConfigurationManagerInternal: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IConfigurationManagerHelper: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IInternalConfigConfigurationFactory: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IInternalConfigRoot: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.IInternalConfigSettingsFactory: type is an interface.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.InternalConfigEventHandler: type is a delegate.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for System.Configuration.Internal.StreamChangeCallback: type is a delegate.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.UnitTests\Fakes\System.configuration.fakes : warning : Cannot generate shim for <PrivateImplementationDetails>{93A4BEAA-EB64-4423-B4F3-74C8A16E9AD7}: type is not supported because of internal limitations.

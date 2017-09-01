@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="5353b8f0-3ef4-4ce0-b4b1-1259b9e210c2" ChangeDateTime="05/18/2016 14:09:15">
+    <Property Name="ElementName" Value="[dbo].[FoodLogEntries].[Color=]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FoodLogEntries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Color" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="62104bd0-e162-4308-ab6f-39f26b0cfb24" ChangeDateTime="06/11/2017 16:11:30">
+    <Property Name="ElementName" Value="[dbo].[FoodLogEntries].[Color=]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FoodLogEntries]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Color" />
+  </Operation>
+</Operations>

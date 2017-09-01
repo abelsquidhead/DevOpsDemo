@@ -1,0 +1,7 @@
+H:\AbelWork\MercuryWeb\src\MercuryHealth.Models.Tests\Fakes\MercuryHealth.Models.fakes : warning : Cannot generate stub for MercuryHealth.Models.BmrCalculatorOption: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.Models.Tests\Fakes\MercuryHealth.Models.fakes : warning : Cannot generate stub for MercuryHealth.Models.ExerciseLevel: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.Models.Tests\Fakes\MercuryHealth.Models.fakes : warning : Cannot generate stub for MercuryHealth.Models.Gender: type is a value type.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.Models.Tests\Fakes\MercuryHealth.Models.fakes : warning : Cannot generate shim for MercuryHealth.Models.BmrCalculatorOption: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.Models.Tests\Fakes\MercuryHealth.Models.fakes : warning : Cannot generate shim for MercuryHealth.Models.ExerciseLevel: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.Models.Tests\Fakes\MercuryHealth.Models.fakes : warning : Cannot generate shim for MercuryHealth.Models.Gender: type is an enum.
+H:\AbelWork\MercuryWeb\src\MercuryHealth.Models.Tests\Fakes\MercuryHealth.Models.fakes : warning : Cannot generate shim for MercuryHealth.Models.IBasalMetabolicRateCalculator: type is an interface.
