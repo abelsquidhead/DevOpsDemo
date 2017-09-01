@@ -254,7 +254,7 @@ http://abelsquidhead.com/index.php/2016/04/06/setting-up-a-devops-demo-using-vst
     >**Talking Point**: From the deployment report, we can see that we deployed to dev and qa and the deployment failed in BlueGreen.  We can see some tests failed in BlueGreen.  Clicking on the test links shows us the failed tests and why the tests failed.  If we are wondering what was actually deployed, the work item's associated with this deployment are shown as well as we are linked back to the buil report, which shows everything that has happened to the specific build. So there you have it.  VSTS.  Everything you need to build software for any platform.  From Work Item Tracking, to Source Control, Build, Test and Release.
 
 ## Video Walkthrough
-Here is a [video walkthrough](https://cadddemos.visualstudio.com/_git/Velocity2017DevOps?path=%2FVelocity2017.mp4&version=GBmaster&_a=contents) of the demo
+Here is a [video walkthrough](https://github.com/abelsquidhead/DevOpsDemo/blob/master/Velocity2017.mp4) of the demo
 
 
 
