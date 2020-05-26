@@ -1,0 +1,43 @@
+# ASP.NET
+# Build and test ASP.NET projects.
+# Add steps that publish symbols, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- powershell: |
+   # Write your PowerShell commands here.
+   
+   $lockName = "mercuryHealthTesting"
+   Write-Host "Acquiring monitor lock for " $lockName "..."
+   
+   while (-Not (Invoke-RestMethod -Uri http://abelmonitorfunction.azurewebsites.net/api/CreateLock?name=$lockName)) {
+      Write-Host "    Could not acquire lock for " $lockName ", trying again in 5 seconds..."
+       start-sleep -s 5
+   }
+   
+   Write-Host "Monitor lock acquired for " $lockName
+  displayName: 'Acquire Monitor Lock'
+
+- powershell: |
+   # Write your PowerShell commands here.
+   
+   $lockName = "mercuryHealthTesting"
+   Write-Host "Release monitor lock for " $lockName "..."
+   
+   $outputMessage = Invoke-RestMethod -Uri http://abelmonitorfunction.azurewebsites.net/api/UnlockFunction?name=$lockName
+   Write-Host "    " $outputMessage
+   
+   Write-Host "Monitor lock released for " $lockName
+  displayName: 'Release Monitor Lock'
+  condition: always()
