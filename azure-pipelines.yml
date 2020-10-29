@@ -1,42 +1,88 @@
-# ASP.NET
-# Build and test ASP.NET projects.
-# Add steps that publish symbols, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
-
-trigger:
+ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
+#Your build pipeline references a secret variable named ‘servicePrincipal.password’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘azureDevOpsPAT’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references an undefined variable named ‘echo $sourceVersionMessage| sed -r 's/^([^.]+’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+  servicePrincipal.name: 'http://AbelDeployDemoBackupPrincipal'
+  servicePrincipal.tenant: '72f988bf-86f1-41af-91ab-2d7cd011db47'
+  webApp.name: 'PRWorkflowBlogAppService'
+  webApp.resourceGroup: 'PRWorkflowBlog'
 
 steps:
-- powershell: |
-   # monitors are serialy locked by name
-   $lockName = "mercuryHealthTesting"
-   Write-Host "Acquiring monitor lock for " $lockName "..."
+- bash: |
+   # Login to Azure using service principal
+   echo 'Logging into Azure with service principal...'
+   az login \
+     --service-principal \
+     --username $(servicePrincipal.name) \
+     --tenant $(servicePrincipal.tenant) \
+     --password $SERVICE_PRINCIPAL_PASSWORD
+   echo 'Logged into Azure'
+   echo ''
    
-   while (-Not (Invoke-RestMethod -Uri http://abelmonitorfunction.azurewebsites.net/api/CreateLock?name=$lockName)) {
-      Write-Host "    Could not acquire lock for " $lockName ", trying again in 5 seconds..."
-       start-sleep -s 5
-   }
+   # Create staging slot for PR
+   echo 'Creating staging slot for PR...'
+   az webapp deployment slot create \
+       --name $(webApp.name) \
+       --resource-group $(webApp.resourceGroup) \
+       --slot staging-pr-$(System.PullRequest.PullRequestId)
+   echo "Created staging slot for PR " $(System.PullRequest.PullRequestId)
    
-   Write-Host "Monitor lock acquired for " $lockName
-  displayName: 'Acquire Monitor Lock'
+  displayName: 'Create CI Staging Slot For PR'
+  condition: and(succeeded(), eq(variables['Build.Reason'], 'PullRequest'))
+  env:
+    SERVICE_PRINCIPAL_PASSWORD: $(servicePrincipal.password)
 
-- powershell: |
-   # monitors are serialy locked by name
-   $lockName = "mercuryHealthTesting"
-   Write-Host "Release monitor lock for " $lockName "..."
+- bash: |
+   # Add PR comment with link to staging
+   echo "Adding PR comment with link to staging environment..."
+   message="Created staging environment for PR - https://$(webApp.name)-staging-pr-"$(System.PullRequest.PullRequestId)".azurewebsites.net/"
+   echo "message: $message"
    
-   # call rest api to unlock monitor
-   $outputMessage = Invoke-RestMethod -Uri http://abelmonitorfunction.azurewebsites.net/api/UnlockFunction?name=$lockName
-   Write-Host "    " $outputMessage
+   # post message to PR using azure devops rest api
+   curl -i --user :$AZURE_DEVOPS_PAT -H "Content-Type: application/json" -H "Accept: aon" -X POST -d '{"comments": [{ "parentCommentId":0, "content": "'"$message"'", "commentType": 1}], "status": 1}' $(System.TeamFoundationCollectionUri)/$(System.TeamProject)/_apis/git/repositories/$(Build.Repository.ID)/pullRequests/$(System.PullRequest.PullRequestId)/threads?api-version=6.1-preview.1
    
-   Write-Host "Monitor lock released for " $lockName
-  displayName: 'Release Monitor Lock'
-  condition: always()
+   echo "Done adding PR comment with link to staging environment"
+  displayName: 'Add staging URL to PR Comment'
+  condition: and(succeeded(), eq(variables['Build.Reason'], 'PullRequest'))
+  env:
+    AZURE_DEVOPS_PAT: $(azureDevOpsPAT)
+
+- bash: |
+   # PR Closed, changes merged to main
+   echo 'PR close, changes merged to main'
+   
+   # get the source version message
+   sourceVersionMessage="$(Build.SourceVersionMessage)"
+   echo 'build source version message: ' $sourceVersionMessage
+   
+   # parse the PR number from the source version message
+   prNumber=$(echo $sourceVersionMessage| sed -r 's/^([^.]+).*$/\1/; s/^[^0-9]*([0-9]+).*$/\1/')
+   echo 'prNumber: ' $prNumber
+   
+   # Login to Azure using service principal
+   echo 'Logging into Azure with service principal...'
+   az login \
+     --service-principal \
+     --username $(servicePrincipal.name) \
+     --tenant $(servicePrincipal.tenant) \
+     --password $SERVICE_PRINCIPAL_PASSWORD
+   echo 'Logged into Azure'
+   echo ''
+   
+   # Delete PR staging slot
+   echo 'Deleting staging slot for PR ' $prNumber '...'
+   az webapp deployment slot delete \
+     --name $(webApp.name) \
+     --resource-group $(webApp.resourceGroup) \
+     --slot staging-pr-$prNumber
+   echo 'Deleted slot for PR ' $prNumber
+  displayName: 'Delete Staging Slot For PR'
+  condition: and(succeeded(), startsWith(variables['Build.SourceVersionMessage'], 'Merged PR '))
+  env:
+    SERVICE_PRINCIPAL_PASSWORD: $(servicePrincipal.password)
